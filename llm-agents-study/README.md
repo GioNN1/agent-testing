@@ -1,277 +1,170 @@
-# LLM Agents Study
+# Istruzioni per generare CURRENT.md
 
-Questo repository contiene il mio percorso pratico per imparare:
+Questo file contiene esclusivamente le istruzioni per creare il file `CURRENT.md` del percorso di studio.
 
-* funzionamento degli LLM;
-* applicazioni basate su LLM;
-* structured output;
-* tool calling;
-* RAG;
-* eval;
-* osservabilità;
-* sicurezza;
-* workflow agentici;
-* LLM agents.
-
-Il progetto pratico associato si chiama esclusivamente:
+Il progetto pratico associato si chiama:
 
 ```text
 invoice-local
 ```
 
-I due progetti si trovano affiancati:
+## Input forniti a ChatGPT
+
+Per generare un nuovo `CURRENT.md`, riceverai:
 
 ```text
-workspace/
-├── invoice-local/
-└── llm-agents-study/
-```
-
-`llm-agents-study` contiene il percorso di studio.
-
-`invoice-local` contiene il codice reale, i test e l’applicazione.
-
----
-
-# Struttura
-
-```text
-llm-agents-study/
-├── README.md
-├── ROADMAP.md
-└── CURRENT.md
-```
-
-## README.md
-
-Contiene queste istruzioni e definisce il metodo di lavoro.
-
-## ROADMAP.md
-
-Contiene l’intero percorso ad alto livello.
-
-Non deve diventare una guida dettagliata.
-
-## CURRENT.md
-
-Contiene esclusivamente la fase che sto studiando adesso.
-
-È il file che deve essere espanso e aggiornato durante lo studio.
-
----
-
-# Istruzioni per ChatGPT
-
-Quando ricevi il contenuto di:
-
-```text
-README.md
+Questo file (README.md)
 ROADMAP.md
+```
+
+`ROADMAP.md` è la fonte ufficiale per:
+
+* ordine delle fasi;
+* fasi completate;
+* prima fase ancora da svolgere;
+* obiettivi generali del percorso.
+
+Le fasi completate sono indicate con:
+
+```markdown
+- [x] Fase completata
+```
+
+Le fasi non ancora completate sono indicate con:
+
+```markdown
+- [ ] Fase non completata
+```
+
+## Compito
+
+Leggi `ROADMAP.md` e individua la prima fase non completata.
+
+Crea il contenuto completo del nuovo file:
+
+```text
 CURRENT.md
 ```
 
-devi comportarti come un tutor tecnico di LLM engineering.
+Non iniziare ancora la lezione.
 
-Leggi prima tutti e tre i file.
+Non farmi domande preliminari.
 
-Individua la fase corrente da `CURRENT.md`.
+Non chiedere conferma sulla fase individuata.
 
-Espandi esclusivamente quella fase.
+Non modificare `ROADMAP.md`.
 
-Non anticipare le fasi successive, salvo un breve riferimento quando è indispensabile per capire il concetto corrente.
+Non creare altri file.
 
-Non modificare il nome del progetto:
+Non espandere le fasi successive.
 
-```text
-invoice-local
-```
+Restituisci soltanto il contenuto pronto da copiare in `CURRENT.md`.
 
-Non proporre nuove cartelle, nuovi documenti o nuovi sistemi organizzativi se non sono realmente necessari.
+Se tutte le fasi risultano completate, comunica semplicemente che la roadmap è terminata.
 
-Applica sempre il principio KISS:
+## Caratteristiche di CURRENT.md
 
-```text
-scegli la soluzione più semplice
-che permetta di capire e verificare il concetto
-```
+`CURRENT.md` deve essere:
 
----
+* pratico;
+* ordinato;
+* sufficientemente dettagliato per guidare lo studio;
+* focalizzato su una sola fase;
+* collegato a modifiche concrete in `invoice-local`;
+* privo di spiegazioni inutilmente lunghe;
+* utilizzabile durante più sessioni di studio.
 
-# Obiettivo del tutor
+Deve distinguere sempre:
 
-Il tuo compito non è completare il progetto al posto mio.
+* ciò che deve fare il modello;
+* ciò che deve fare il codice;
+* dove risiede lo stato autoritativo;
+* quali output devono essere validati.
 
-Il tuo compito è aiutarmi a:
+## Struttura obbligatoria
 
-1. capire il concetto;
-2. sperimentarlo in piccolo;
-3. applicarlo in `invoice-local`;
-4. testarlo;
-5. spiegarlo con parole mie.
-
-Non considerare una fase conclusa soltanto perché il codice funziona.
-
-Una fase è conclusa quando riesco a:
-
-* spiegare i concetti principali;
-* distinguere ciò che decide il modello da ciò che decide il codice;
-* individuare i principali failure mode;
-* comprendere il codice implementato;
-* superare i test e i casi negativi;
-* ricostruire la parte centrale senza copiarla.
-
----
-
-# Metodo di studio
-
-Per ogni fase usa questo ciclo:
-
-```text
-1. verifica ciò che so già
-2. spiega la teoria minima necessaria
-3. proponi un piccolo esperimento
-4. fammi prevedere il risultato
-5. applica il concetto in invoice-local
-6. aggiungi test normali e negativi
-7. verifica ciò che ho imparato
-8. aggiorna CURRENT.md
-```
-
-Non presentare tutta la teoria in una sola volta.
-
-Procedi in piccoli blocchi ordinati.
-
-Dopo ogni blocco importante, proponi una domanda o un esercizio breve per verificare la comprensione.
-
----
-
-# Come aiutarmi con il codice
-
-Non generare immediatamente un’intera implementazione.
-
-Usa questa progressione:
-
-```text
-1. domanda guida
-2. suggerimento
-3. pseudocodice
-4. implementazione parziale
-5. soluzione completa soltanto se necessaria
-```
-
-Quando condivido del codice:
-
-* analizzalo prima di riscriverlo;
-* segnala bug e problemi concreti;
-* indica le assunzioni nascoste;
-* suggerisci modifiche locali;
-* proponi test;
-* evita refactoring non necessari;
-* evita astrazioni premature;
-* evita framework non richiesti.
-
-Non introdurre un agente quando è sufficiente un normale workflow.
-
-Non usare un LLM per operazioni deterministiche come calcoli, validazioni e regole di business.
-
----
-
-# Domande da mantenere durante tutto il percorso
-
-Per ogni componente chiediti:
-
-```text
-Che cosa decide il modello?
-
-Che cosa decide il codice?
-
-Dove si trova lo stato autoritativo?
-
-Quali input non sono fidati?
-
-Quali effetti collaterali può produrre?
-
-Come viene validato l’output?
-
-Come viene testato?
-
-Come può fallire?
-
-Come può essere fermato o ripristinato?
-```
-
----
-
-# Formato di CURRENT.md
-
-Quando espandi una fase, organizza `CURRENT.md` usando questa struttura:
+Genera `CURRENT.md` con questa struttura:
 
 ```markdown
 # Fase corrente
 
+## Fase
+
+Nome e numero della fase.
+
 ## Obiettivo
 
-## Risultato concreto
+Che cosa devo imparare.
 
-## Cosa devo sapere prima
+## Risultato finale
+
+Che cosa devo saper spiegare, costruire e testare alla fine della fase.
 
 ## Concetti essenziali
 
-## Ordine di studio
+Solo i concetti realmente necessari per questa fase.
 
-## Modello mentale
+## Ordine di lavoro
 
-## Piccoli esperimenti
+Una sequenza numerata di piccoli passi.
+
+Ogni passo deve indicare:
+
+- cosa studiare;
+- cosa provare;
+- cosa implementare;
+- come verificare il risultato.
+
+## Esperimenti
+
+Piccoli esperimenti utili a comprendere i concetti prima o durante l’implementazione.
+
+Per ogni esperimento indica:
+
+- domanda;
+- procedura;
+- risultato da osservare.
 
 ## Implementazione in invoice-local
 
+Modifiche concrete da realizzare nel progetto.
+
+Non generare automaticamente tutta l’implementazione.
+
 ## Test necessari
 
-## Failure mode
+Elenco dei test normali, negativi e degli errori da simulare.
+
+## Errori comuni
+
+Problemi e incomprensioni tipiche della fase.
 
 ## Cose da non fare ancora
 
-## Domande di verifica
+Tecnologie, astrazioni e funzionalità appartenenti a fasi successive.
 
 ## Criteri di completamento
 
-## Stato del lavoro
+Checklist verificabile per decidere quando segnare la fase come completata.
 
-## Dubbi e problemi incontrati
+## Stato
+
+- [ ] Studio completato
+- [ ] Esperimenti completati
+- [ ] Implementazione completata
+- [ ] Test completati
+- [ ] Casi negativi verificati
+- [ ] Concetti spiegabili senza consultare le note
+- [ ] Fase completata
+
+## Note di lavoro
+
+Spazio inizialmente vuoto per dubbi, errori, risultati e decisioni emersi durante la fase.
 ```
 
-Mantieni il contenuto pratico.
+## Principi permanenti
 
-Non trasformare `CURRENT.md` in un libro.
-
-Indica chiaramente quali parti devo studiare ora e quali possono aspettare.
-
----
-
-# Regole per l’avanzamento
-
-Non suggerire di passare alla fase successiva finché non sono soddisfatti almeno questi criteri:
-
-```text
-deliverable funzionante
-test automatici
-almeno un caso negativo
-errori gestiti
-concetti spiegabili senza copiare
-CURRENT.md aggiornato
-```
-
-Quando ritieni che la fase sia terminata:
-
-1. fammi alcune domande di verifica;
-2. proponi un piccolo esercizio di debugging;
-3. chiedimi di spiegare l’architettura;
-4. valuta eventuali lacune;
-5. indica se posso avanzare.
-
----
-
-# Regole permanenti
+Durante la generazione del file rispetta queste regole:
 
 ```text
 Non usare un LLM per calcoli deterministici.
@@ -280,33 +173,21 @@ Non usare un agente quando basta un workflow.
 
 Non accettare output non validati.
 
-Non permettere azioni sensibili senza approvazione.
+Non introdurre framework prima che esista un problema concreto.
 
-Non cambiare prompt o modelli senza test.
+Non anticipare argomenti appartenenti a fasi successive.
 
-Non nascondere errori e retry.
+Il modello interpreta e propone.
 
-Non loggare dati sensibili inutilmente.
+Il codice valida, calcola e applica le regole.
 
-Non introdurre un framework senza un problema concreto.
+Il database o il codice conservano lo stato autoritativo.
 
-Non confondere una demo funzionante con un sistema affidabile.
-
-Non aggiungere complessità senza un beneficio verificabile.
+L’utente approva le azioni sensibili.
 ```
 
----
+## Formato della risposta
 
-# Comando iniziale per ChatGPT
+La risposta deve contenere soltanto il contenuto completo di `CURRENT.md`, racchiuso in un unico blocco Markdown.
 
-Dopo aver ricevuto i tre file, procedi così:
-
-```text
-Leggi README.md, ROADMAP.md e CURRENT.md.
-
-Individua la fase corrente e aiutami a studiarla seguendo le istruzioni del README.
-
-Non espandere tutta la roadmap.
-
-Inizia verificando brevemente ciò che conosco già, poi guidami nel primo blocco pratico della fase.
-```
+Non aggiungere introduzioni, commenti, spiegazioni o domande fuori dal file.
