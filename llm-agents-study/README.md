@@ -81,6 +81,52 @@ Deve distinguere sempre:
 * dove risiede lo stato autoritativo;
 * quali output devono essere validati.
 
+## Contenuto didattico di CURRENT.md
+
+`CURRENT.md` non deve essere soltanto un indice, una checklist o un elenco di macroargomenti.
+
+Deve contenere il materiale teorico essenziale necessario per studiare la fase senza dover cercare autonomamente ogni definizione.
+
+Per ogni concetto includi:
+
+1. **Definizione**
+   Spiegazione precisa in linguaggio semplice.
+
+2. **Modello mentale**
+   Un modo corretto e intuitivo di rappresentare il funzionamento del concetto.
+
+3. **Come funziona**
+   Descrizione ordinata dei passaggi principali.
+
+4. **Esempio minimale**
+   Un esempio concreto e comprensibile.
+
+5. **Applicazione a `invoice-local`**
+   Perché il concetto è rilevante nel progetto.
+
+6. **Cosa non risolve**
+   Limiti del concetto e problemi per i quali non è sufficiente.
+
+7. **Errori comuni**
+   Fraintendimenti e assunzioni scorrette.
+
+8. **Domande di verifica**
+   Due o tre domande senza risposta immediata.
+
+Non limitarti a scrivere frasi come:
+
+* “studiare la tokenizzazione”;
+* “capire il sampling”;
+* “approfondire gli embeddings”.
+
+Spiega concretamente questi argomenti nel file.
+
+Il livello di dettaglio deve essere sufficiente per comprendere i fondamenti, ma non deve trasformare `CURRENT.md` in un’enciclopedia.
+
+Gli approfondimenti ulteriori verranno svolti in più sessioni con ChatGPT usando sempre lo stesso `CURRENT.md`.
+
+Quindi: **un solo `CURRENT.md` per fase, ma più passaggi con ChatGPT sullo stesso file**. Il file iniziale deve già insegnare le basi; ChatGPT serve poi ad approfondire, interrogarti e seguirti negli esperimenti.
+
 ## Struttura obbligatoria
 
 Genera `CURRENT.md` con questa struttura:
@@ -102,7 +148,7 @@ Che cosa devo saper spiegare, costruire e testare alla fine della fase.
 
 ## Concetti essenziali
 
-Solo i concetti realmente necessari per questa fase.
+Materiale teorico autosufficiente sui concetti realmente necessari per questa fase, organizzato secondo la sezione “Contenuto didattico di CURRENT.md”.
 
 ## Ordine di lavoro
 
