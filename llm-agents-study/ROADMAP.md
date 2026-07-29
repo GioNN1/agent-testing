@@ -58,7 +58,7 @@ L’autonomia aumenta soltanto quando il sistema è già misurabile e controllab
 
 ---
 
-# Fase 0 — Fondamenti degli LLM
+# Fase 1 — Fondamenti degli LLM
 
 ## Obiettivo
 
@@ -89,7 +89,7 @@ Saper spiegare cosa accade tra l’invio di una richiesta e la generazione della
 
 ---
 
-# Fase 1 — Servizio LLM minimale
+# Fase 2 — Servizio LLM minimale
 
 ## Obiettivo
 
@@ -120,7 +120,7 @@ possiede test automatici
 
 ---
 
-# Fase 2 — Output strutturato
+# Fase 3 — Output strutturato
 
 ## Obiettivo
 
@@ -153,7 +153,7 @@ Il codice decide se accettarli.
 
 ---
 
-# Fase 3 — Workflow deterministico
+# Fase 4 — Workflow deterministico
 
 ## Obiettivo
 
@@ -189,7 +189,7 @@ convalidare regole di business
 
 ---
 
-# Fase 4 — Affidabilità e recupero dagli errori
+# Fase 5 — Affidabilità e recupero dagli errori
 
 ## Obiettivo
 
@@ -215,7 +215,7 @@ Ripetere la stessa richiesta non deve creare due fatture o lasciare dati incoere
 
 ---
 
-# Fase 5 — Tool calling controllato
+# Fase 6 — Tool calling controllato
 
 ## Obiettivo
 
@@ -255,7 +255,7 @@ Le azioni sensibili non vengono eseguite automaticamente.
 
 ---
 
-# Fase 6 — RAG e conoscenza esterna
+# Fase 7 — RAG e conoscenza esterna
 
 ## Obiettivo
 
@@ -292,7 +292,7 @@ prompt injection nei documenti
 
 ---
 
-# Fase 7 — Context, stato e memoria
+# Fase 8 — Context, stato e memoria
 
 ## Obiettivo
 
@@ -328,7 +328,7 @@ Lo stato autoritativo vive nel codice o nel database, non nella memoria testuale
 
 ---
 
-# Fase 8 — Evals e osservabilità
+# Fase 9 — Evals e osservabilità
 
 ## Obiettivo
 
@@ -370,7 +370,7 @@ errori
 
 ---
 
-# Fase 9 — Approvazione umana
+# Fase 10 — Approvazione umana
 
 ## Obiettivo
 
@@ -412,7 +412,7 @@ Nessuna azione definitiva può essere eseguita senza uno stato valido di approva
 
 ---
 
-# Fase 10 — Agent loop controllato
+# Fase 11 — Agent loop controllato
 
 ## Obiettivo
 
@@ -456,7 +456,7 @@ Un agente che può creare e validare bozze, fermarsi, fallire e riprendere senza
 
 ---
 
-# Fase 11 — Sicurezza
+# Fase 12 — Sicurezza
 
 ## Obiettivo
 
@@ -491,7 +491,7 @@ procedura di risposta
 
 ---
 
-# Fase 12 — Prestazioni e routing dei modelli
+# Fase 13 — Prestazioni e routing dei modelli
 
 ## Obiettivo
 
@@ -528,7 +528,7 @@ risorse disponibili
 
 ---
 
-# Fase 13 — Gateway e gestione centralizzata
+# Fase 14 — Gateway e gestione centralizzata
 
 ## Obiettivo
 
@@ -557,7 +557,7 @@ Questa fase può essere rimandata se esiste una sola applicazione e un solo mode
 
 ---
 
-# Fase 14 — Framework agentici
+# Fase 15 — Framework agentici
 
 ## Obiettivo
 
@@ -602,7 +602,7 @@ Saper motivare perché un framework è necessario e quali costi introduce.
 
 ---
 
-# Fase 15 — Deployment e operatività
+# Fase 16 — Deployment e operatività
 
 ## Obiettivo
 
@@ -634,7 +634,7 @@ Il sistema può continuare a offrire funzionalità essenziali anche quando il mo
 
 ---
 
-# Fase 16 — Progetto finale
+# Fase 17 — Progetto finale
 
 ## Obiettivo
 
