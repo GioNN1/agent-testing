@@ -2,7 +2,7 @@
 
 ## Fase
 
-**Fase 0 — Fondamenti degli LLM**
+**Fase 1 — Fondamenti degli LLM**
 
 ## Stato
 
